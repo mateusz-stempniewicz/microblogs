@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import NavRouteEnum from '../../enums/NavRouteEnum';
 import Navbar from '../../styled-components/Navbar';
+import NavList from '../../styled-components/NavList';
+import NavListItem from './NavListItem';
 
 const NavContainer = styled.nav`
   align-items: center;
@@ -11,7 +14,13 @@ const NavContainer = styled.nav`
 
 const Navigation = () => (
   <Navbar>
-    <NavContainer>Nawigacja</NavContainer>
+    <NavContainer>
+      <NavList>
+        {NavRouteEnum.map((route, index) => (
+          <NavListItem key={index} linkName={route.linkName} path={route.path} />
+        ))}
+      </NavList>
+    </NavContainer>
   </Navbar>
 );
 

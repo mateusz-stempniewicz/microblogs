@@ -1,5 +1,7 @@
 import React from 'react';
 
-const DashboardPage = () => <div>Dashboard Page</div>;
+import WrapperContainer from '../../styled-components/WrapperContainer';
+
+const DashboardPage = () => <WrapperContainer>Dashboard Page</WrapperContainer>;
 
 export default DashboardPage;

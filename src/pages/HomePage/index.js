@@ -1,5 +1,7 @@
 import React from 'react';
 
-const HomePage = () => <div>HomePage</div>;
+import WrapperContainer from '../../styled-components/WrapperContainer';
+
+const HomePage = () => <WrapperContainer>HomePage</WrapperContainer>;
 
 export default HomePage;
