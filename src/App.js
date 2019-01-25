@@ -4,7 +4,8 @@ import { ThemeProvider } from 'styled-components';
 import { withAuthenticator } from 'aws-amplify-react';
 
 import theme from './style/theme';
-import GlobalStyle from './style/GlobalStyle';
+
+import Layout from './pages/Layout';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const DashboardPage = lazy(() => import('./pages/DashboardPage'));
@@ -12,13 +13,12 @@ const DashboardPage = lazy(() => import('./pages/DashboardPage'));
 const App = () => (
   <ThemeProvider theme={theme}>
     <Router>
-      <React.Fragment>
-        <GlobalStyle />
+      <Layout>
         <Suspense fallback={''}>
           <Route exact path="/" render={() => <HomePage />} />
           <Route exact path="/dashboard" render={() => <DashboardPage />} />
         </Suspense>
-      </React.Fragment>
+      </Layout>
     </Router>
   </ThemeProvider>
 );
