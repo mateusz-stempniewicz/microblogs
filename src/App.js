@@ -10,6 +10,7 @@ import Layout from './pages/Layout';
 const HomePage = lazy(() => import('./pages/HomePage'));
 const DashboardPage = lazy(() => import('./pages/DashboardPage'));
 const RegisterPage = lazy(() => import('./pages/RegisterPage'));
+const LoginPage = lazy(() => import('./pages/LoginPage'));
 
 const App = () => (
   <ThemeProvider theme={theme}>
@@ -19,6 +20,7 @@ const App = () => (
           <Route exact path="/" render={() => <HomePage />} />
           <Route exact path="/dashboard" render={() => <DashboardPage />} />
           <Route exact path="/register" render={() => <RegisterPage />} />
+          <Route exact path="/login" render={() => <LoginPage />} />
         </Suspense>
       </Layout>
     </Router>

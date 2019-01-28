@@ -6,6 +6,14 @@ const NavRouteEnum = [
   {
     linkName: 'Dashboard',
     path: '/dashboard'
+  },
+  {
+    linkName: 'Login',
+    path: '/login'
+  },
+  {
+    linkName: 'Register',
+    path: '/register'
   }
 ];
 
