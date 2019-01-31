@@ -1,11 +1,15 @@
 const NavRouteEnum = [
   {
-    linkName: 'Home',
+    linkName: 'Dashboard',
     path: '/'
   },
   {
-    linkName: 'Dashboard',
-    path: '/dashboard'
+    linkName: 'Blog',
+    path: '/blog'
+  },
+  {
+    linkName: 'Explore',
+    path: '/explore'
   },
   {
     linkName: 'Login',
