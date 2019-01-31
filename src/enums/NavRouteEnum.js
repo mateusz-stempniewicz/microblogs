@@ -10,14 +10,6 @@ const NavRouteEnum = [
   {
     linkName: 'Explore',
     path: '/explore'
-  },
-  {
-    linkName: 'Login',
-    path: '/login'
-  },
-  {
-    linkName: 'Register',
-    path: '/register'
   }
 ];
 
